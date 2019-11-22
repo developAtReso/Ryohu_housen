@@ -1,2 +1,2 @@
-# Ryohu_housen
-Reso develop用
+# Ryohu_hosen
+laravel Project with Mr.suga
