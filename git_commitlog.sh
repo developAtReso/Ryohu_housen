@@ -1,5 +1,9 @@
 #!/bin/bash
-PWD=$(pwd)
+# PWD=$(pwd)
+PWD=`pwd`
 var=$(ls -F)
-echo $var
+echo $PWD
 #git log --name-status
+
+
+

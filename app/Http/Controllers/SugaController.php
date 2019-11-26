@@ -11,6 +11,6 @@ class SugaController extends Controller
 {
     public function index()
     {
-        return view('sugatest');
+        return view('sugatest', ['name' => 'ssssuga']);
     }
 }
