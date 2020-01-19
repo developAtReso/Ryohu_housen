@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sugatest', 'SugaController@index');
+Route::get('/sugatest/{url?}', 'SugaController@index');

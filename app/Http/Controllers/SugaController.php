@@ -9,8 +9,8 @@ use Illuminate\Routing\Controller as BaseController;
 
 class SugaController extends Controller
 {
-    public function index()
+    public function index($url = 'sugatest')
     {
-        return view('sugatest', ['name' => 'ssssuga']);
+        return view($url, ['name' => 'ssssuga']);
     }
 }
