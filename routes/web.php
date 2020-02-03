@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('blade', function () {
+    return view('child',['name' => 'Samantha']);
+});
+
 Route::get('/sugatest/{url?}', 'SugaController@index');
