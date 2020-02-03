@@ -30,7 +30,7 @@ class OrderShipped extends Mailable
     {
         return $this->from('sugample@example.com')
                     ->markdown('emails.orders.shipped')
-                    ->subject('subjecting')
+                    ->subject('subjecting');
 
     }
 }
