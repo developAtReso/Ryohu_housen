@@ -19,3 +19,7 @@ sugatest1
 
     You are not allowed to access this resource!
 @endcomponent
+
+<h3>DB使用</h3>
+{{ $sugadb }}
+
