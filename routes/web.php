@@ -20,3 +20,6 @@ Route::get('blade', function () {
 });
 
 Route::get('/sugatest/{url?}', 'SugaController@index');
+
+Route::get('/folders/{id}/tasks', 'TaskController@index')->name('tasks.index');
+
