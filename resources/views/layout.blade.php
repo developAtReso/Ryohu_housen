@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>@yield('title')</title>
-    </head>
-    <body>
-        
-        <h1>Hello,{{ $name }}</h1>
-        <input name="radiing" value="value" type="radio" id="1"><label>test</label>
-        <h3>common</h3>
-        
-        @yield('content')
-    </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDo App</title>
+  @yield('styles')
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+  <nav class="my-navbar">
+    <a class="my-navbar-brand" href="/">ToDo App</a>
+  </nav>
+</header>
+<main>
+  @yield('content')
+</main>
+@yield('scripts')
+</body>
 </html>
