@@ -20,6 +20,7 @@ Route::get('blade', function () {
 });
 
 Route::get('/sugatest/{url?}', 'SugaController@index');
+Route::post('/sugatest/{url?}', 'SugaController@sendMail')->name('sendMail');
 
 Route::get('/folders/{id}/tasks', 'TaskController@index')->name('tasks.index');
 

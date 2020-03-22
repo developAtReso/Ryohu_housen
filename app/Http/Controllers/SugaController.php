@@ -16,13 +16,19 @@ class SugaController extends Controller
 {
     public function index($url = 'sugatest')
     {
-        Mail::to('test@gmail.com')->send(new OrderShipped());
-        $sugadb = DB::table('sugatest')->get();
-        Log::info('logtest');
-        Log::emergency('logtest');
-        Storage::disk('local')->put('file.txt','testContests');
+        // Mail::to('test@gmail.com')->send(new OrderShipped());
+        // $sugadb = DB::table('sugatest')->get();
+        // Log::info('logtest');
+        // Log::emergency('logtest');
+        // Storage::disk('local')->put('file.txt','testContests');
         return view($url, ['name' => 'ssssuga',
-                           'sugadb' => $sugadb,
+        ]);
+    }
+
+    public function sendMail($url = 'sugatest')
+    {
+        Mail::to('test@gmail.com')->send(new OrderShipped());
+        return view($url, ['name' => 'sendMail',
         ]);
     }
 }

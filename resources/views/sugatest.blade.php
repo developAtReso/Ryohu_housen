@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layoutsuga')
 
 @section('title')
  sugatest1
@@ -20,6 +20,9 @@ sugatest1
     You are not allowed to access this resource!
 @endcomponent
 
-<h3>DB使用</h3>
-{{ $sugadb }}
-
+<form action="{{ route('sendMail') }}" method="POST">
+    @csrf
+    <div class="mail">
+        <button type="submit" class="btn btn-primary">メール送信</button>
+    </div>
+</form>

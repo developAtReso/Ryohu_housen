@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layoutsuga')
 
 @section('title')
 suga2<br>
@@ -7,7 +7,7 @@ mark2
 
 @section('content')
 
-<h3>ポチ太郎</h3>
+<h3>ポチ次郎</h3>
 sugatest2
 
 @endsection
