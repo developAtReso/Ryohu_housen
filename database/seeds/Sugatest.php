@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\facades\DB;
 
 class Sugatest extends Seeder
 {
