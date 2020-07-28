@@ -13,6 +13,7 @@ use App\Mail\OrderShipped;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
+
 class SugaController extends Controller
 {
     public function index($url = 'sugatest')
